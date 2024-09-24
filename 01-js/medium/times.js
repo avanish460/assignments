@@ -9,5 +9,16 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    const startTime = new Date().getTime();
+    //code goes here
+    let sumValue = 0;
+    for(let i=1; i<=n; i++){
+        sumValue += i;
+    }
+    console.log(sumValue);
+    const endTime = new Date().getTime();
+    const executionTime = endTime - startTime;
+    return executionTime;
 }
+
+console.log(`Run time is ${calculateTime(100000000000)} milisec`);

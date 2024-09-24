@@ -9,4 +9,7 @@ class Animal {
   }
 }
 
+const dog = new Animal(riksi, 4);
+console.log(dog.describe());
+
 
